@@ -1,7 +1,7 @@
 import Home from './pages/Home/Home';
-/*import Error from './pages/Error/Error';
+import Error from './pages/Error/Error';
 import About from './pages/About/About';
-import Logements from './pages/Logements/Logements';*/
+import Logements from './pages/Logements/Logements';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -9,7 +9,7 @@ const router = createBrowserRouter([
 		path: "/",
 		element: <Home />
 	},
-	/*{
+	{
 		path: "/logements/:id",
 		element: <Logements />
 	},
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
 	{
 		path: "*",
 		element: <Error />
-	},*/
+	},
 ]);
 
 function App() {
