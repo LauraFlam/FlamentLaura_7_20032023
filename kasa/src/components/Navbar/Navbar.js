@@ -15,7 +15,7 @@ export default function Navbar() {
                 </li>
                 <li className={currentRoute === '/about' ? 'nav_list_item_active' : 'nav_list_item'}>
                     <Link  to='/about'>
-                        A propos
+                        A Propos
                     </Link>
                 </li>
             </ul>
