@@ -9,4 +9,8 @@
     border-radius: 25px;
     width: 95%;
     margin: 0 auto;
+    @media screen and (max-width: 500px){
+        padding: 0;
+        background-color: white;
+    }
 }
