@@ -1,12 +1,13 @@
 @import '../../Styles/main.scss';
 
-.collapse{
+.collapse {
     background-color: $color-tertiary;
     max-width: 1100px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 1em auto 0 auto;
-    &_title{
+
+    &_title {
         @include flex(row, space-between, center);
         background-color: $color-secondary;
         color: $color-primary;
@@ -15,20 +16,25 @@
         font-size: clamp(13px, 2vw, 18px);
         padding: 10px 15px;
         cursor: pointer;
-        .arrow{
+
+        .arrow {
             transition: all 0.2s ease-in-out;
-            @media screen and (max-width: 1230px){
-                width: 12px;     
+
+            @media screen and (max-width: 1230px) {
+                width: 12px;
             }
         }
-        .arrow_up{
+
+        .arrow_up {
             transform: rotate(0deg);
         }
-        .arrow_down{
+
+        .arrow_down {
             transform: rotate(180deg);
         }
     }
-    &_content{
+
+    &_content {
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -41,28 +47,32 @@
         font-size: clamp(12px, 2vw, 16px);
         color: $color-secondary;
         transition: visibility 0.5s ease-in-out,
-                    opacity 0.5s ease-in-out,
-                    height 0.2s ease-in-out;
+            opacity 0.5s ease-in-out,
+            height 0.2s ease-in-out;
     }
-    &_content_hidden{
+
+    &_content_hidden {
         visibility: hidden;
         opacity: 0;
         height: 0;
     }
 }
 
-.logements_collapse{
+.logements_collapse {
     display: flex;
     justify-content: space-between;
     gap: 70px;
-    &_item{
+
+    &_item {
         width: 50%;
     }
-    @media screen and (max-width: 650px){
+
+    @media screen and (max-width: 650px) {
         flex-direction: column;
         gap: 20px;
-        &_item{
+
+        &_item {
             width: 100%;
-        }    
+        }
     }
 }

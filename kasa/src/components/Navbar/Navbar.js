@@ -9,12 +9,12 @@ export default function Navbar() {
         <nav className='nav'>
             <ul className='nav_list'>
                 <li className={currentRoute === '/' ? 'nav_list_item_active' : 'nav_list_item'}>
-                    <Link  to='/'>
+                    <Link to='/'>
                         Accueil
                     </Link>
                 </li>
                 <li className={currentRoute === '/about' ? 'nav_list_item_active' : 'nav_list_item'}>
-                    <Link  to='/about'>
+                    <Link to='/about'>
                         A Propos
                     </Link>
                 </li>

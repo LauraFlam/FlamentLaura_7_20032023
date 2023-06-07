@@ -32,14 +32,15 @@ export default function About() {
 	return (
 		<div className='about'>
 			<Header />
-            <Banner />
+			<Banner />
 			<main className='about_main'>
 				{aboutData.map(data => {
 					return (
 						<div key={data.id} className="about_main_collapse">
-							<Collapse style={{margin:'30px 0'}}  title={data.title} content={data.content} />
+							<Collapse style={{ margin: '30px 0' }} title={data.title} content={data.content} />
 						</div>
-					)}
+					)
+				}
 				)}
 			</main>
 			<Footer />

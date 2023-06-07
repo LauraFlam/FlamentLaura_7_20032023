@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,26 +8,27 @@
     font-style: normal;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-li{
+li {
     list-style: none;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     max-width: 1440px;
     padding-top: 40px;
     padding-bottom: 15em;
     margin: 0 auto;
     min-height: 100vh;
     position: relative;
+
     @media screen and (max-width: 500px) {
         padding-top: 20px;
     }

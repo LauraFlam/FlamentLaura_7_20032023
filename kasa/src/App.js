@@ -5,16 +5,16 @@ import Logements from './pages/Logements/Logements';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
-	{path: "/", element: <Home />},
-	{path: "/logements/:id", element: <Logements />},
-	{path: '/about', element: <About />},
-	{path: "*", element: <Error />},
+	{ path: "/", element: <Home /> },
+	{ path: "/logements/:id", element: <Logements /> },
+	{ path: '/about', element: <About /> },
+	{ path: "*", element: <Error /> },
 ]);
 
 function App() {
 	return (
 		<>
-			<RouterProvider router={router}/>
+			<RouterProvider router={router} />
 		</>
 	);
 }

@@ -2,7 +2,7 @@ import './Collapse.scss'
 import arrow from '../../assets/arrow.png';
 import { useState } from 'react';
 
-export default function Collapse({title, content}) {
+export default function Collapse({ title, content }) {
 
     const [toggle, setToggle] = useState(false);
 
@@ -11,10 +11,10 @@ export default function Collapse({title, content}) {
             <div className="collapse" >
                 <h3 className='collapse_title' onClick={() => setToggle(!toggle)} >
                     {title}
-                    <img 
-                        className={toggle ? 'arrow arrow_up' : 'arrow arrow_down'} 
-                        src={arrow} 
-                        alt="show content" 
+                    <img
+                        className={toggle ? 'arrow arrow_up' : 'arrow arrow_down'}
+                        src={arrow}
+                        alt="show content"
                     />
                 </h3>
                 <div className={toggle ? 'collapse_content' : 'collapse_content_hidden'}>
@@ -24,7 +24,7 @@ export default function Collapse({title, content}) {
                         )
                     }) : content
                     }
-                </div> 
+                </div>
             </div>
         </>
     )

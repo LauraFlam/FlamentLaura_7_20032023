@@ -7,9 +7,9 @@ export default function Banner() {
 	const [aboutPage, setAboutPage] = useState(false);
 
 	const location = useLocation();
-	
+
 	useEffect(() => {
-		if(location.pathname === '/about'){
+		if (location.pathname === '/about') {
 			setAboutPage(true)
 		};
 		// eslint-disable-next-line
@@ -17,7 +17,7 @@ export default function Banner() {
 
 	return (
 		<section className={aboutPage ? 'banner_about' : 'banner'}>
-			{!aboutPage && <p>Chez vous, <br/>partout et ailleurs</p>}
+			{!aboutPage && <p>Chez vous, <br />partout et ailleurs</p>}
 		</section>
 	)
 }
