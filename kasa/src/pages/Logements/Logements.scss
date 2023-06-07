@@ -1,0 +1,100 @@
+@import '../../Styles/main.scss';
+
+.Fiche-container {
+  color: $color-secondary;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 1em;
+}
+
+.Fiche-logement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logements-description {
+  @include flex-column;
+
+  &__content {
+    @include flex-column;
+
+    &__titles {
+      @include flex-column;
+      margin-bottom: 15px;
+
+      .title {
+        @include font(18px, 500);
+      }
+
+      .location {
+        @include font(14px, 500);
+      }
+    }
+
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__content {
+      @include flex-column;
+      margin-bottom: 30px;
+
+      &__titles {
+        @include flex-column;
+
+        .title {
+          @include font(36px, 500);
+          display: flex;
+          align-items: flex-end;
+        }
+
+        .location {
+          @include font(18px, 500);
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+    }
+  }
+
+    &__host {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-top: 15px;
+  
+      @media screen and (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      &__infos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      &__rate {
+        display: flex;
+        align-items: center;
+        @media screen and (min-width: $breakpoint-desktop){
+          margin-top: 20px;
+        }
+      }
+    }
+
+
+}

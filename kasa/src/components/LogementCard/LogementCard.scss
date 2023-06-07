@@ -7,6 +7,15 @@
     border-radius: 10px;
     cursor: pointer;
     overflow: hidden;
+    @media screen and (max-width: 1230px){
+        width: 47%;   
+    }
+    @media screen and (max-width: 900px){
+        width: 100%;    
+    }
+    @media screen and (max-width: 500px){
+        height: 200px;
+    }
     &:hover{
         box-shadow: 0 2px 8px rgb(0, 0, 0);
     }

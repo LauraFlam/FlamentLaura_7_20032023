@@ -1,0 +1,28 @@
+@import '../../Styles/main.scss';
+
+
+
+.host-name {
+    @include font(18px, 500);
+    margin-right: 10px;
+    text-align: right;
+    width: 93px;
+    @media screen and (max-width: 650px){
+        size: 12px;
+        line-height: 17.11px;
+    }  
+}
+
+.host-picture {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    @media screen and (max-width: 650px){
+        width: 32px;
+        height: 32px;
+    } 
+}
+    
+
+
